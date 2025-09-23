@@ -20,8 +20,8 @@ header {
 }
 
 header .logo {
-  font-size: 20px;
-  font-weight: bold;
+    width: 70px;
+    height: auto;
 }
 
 header nav ul {
@@ -177,4 +177,9 @@ footer a {
   padding: 15px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.hover-effect:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
 }
