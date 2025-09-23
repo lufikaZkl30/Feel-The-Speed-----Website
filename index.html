@@ -1,114 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sando Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FEEL THE SPEED - Demo</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/assets/img/Logo-new-not transparan.png">
+
+  <!-- Icon -->
+   <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/bd/4c/33/bd4c3306b712d2450b25678cf34c69d1.jpg"/>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <img class="logo" src="/assets/img/Logo-new-fix.png" alt="logo">
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>DRIVE THE FUTURE</div>
+    </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Cars</a></li>
         <li><a href="#">Gallery</a></li>
+        <li><a href="#">Profile</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <div class="btn-login"><button>Login</button></div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Main Title</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. 
-      Sed cursus ante dapibus diam.</p>
+    <div class="left">
+      <div class="eyebrow">Welcome to Superdrive</div>
+      <h1>UNLEASH THE<br> BEAST</h1>
+      <p class="lead">Temukan perpaduan sempurna antara desain mewah dan performa mesin buas di setiap tarikan gas.</p>
     </div>
-    <div class="hero-img">
-      <img src="https://i.pinimg.com/736x/be/7e/31/be7e318ce3defdf9e0f175bb7e63391f.jpg" alt="hero">
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services">
-    <div class="service-list">
-      <div class="service-box">Lesson 1</div>
-      <div class="service-box">Lesson 2</div>
-      <div class="service-box">Lesson 3</div>
-    </div>
-    <div class="service-text">
-      <h2>Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="features">
-    <h2>Other Heading</h2>
-    <div class="feature-list">
-      <div class="feature-box">Point 1</div>
-      <div class="feature-box">Point 2</div>
-      <div class="feature-box">Point 3</div>
-      <div class="feature-box">Point 4</div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery">
-    <h2>Our Portfolio Gallery Here</h2>
-    <div class="gallery-list">
-      <div class="gallery-item"></div>
-      <div class="gallery-item"></div>
-      <div class="gallery-item"></div>
-      <div class="gallery-item"></div>
-      <div class="gallery-item"></div>
-    </div>
-  </section>
-
-  <!-- CONTENT -->
-  <section class="content">
-    <h2>The Best Next Heading Here</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    <button>Learn More</button>
-  </section>
-
-  <!-- TESTIMONIAL -->
-  <section class="testimonial">
-    <h2>Our Happy Customer Thoughts</h2>
-    <div class="testimonial-list">
-      <div class="testimonial-box">
-        <p>"Lorem ipsum dolor sit amet consectetur."</p>
-        <span>- Customer 1</span>
-      </div>
-      <div class="testimonial-box">
-        <p>"Sed do eiusmod tempor incididunt ut labore."</p>
-        <span>- Customer 2</span>
+    <div class="right">
+      <div class="meta">
+        <div style="height:160px"></div>
+        <div class="slide-number">01</div>
+        <div style="height:12px"></div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-info">
-      <p>&copy; 2025 Company. All rights reserved.</p>
-    </div>
-    <div class="footer-links">
-      <a href="#">Privacy</a> | <a href="#">Terms</a>
-    </div>
-  </footer>
+  <!-- Cards Section -->
+  <section class="cards">
+    <article class="card">
+      <img src="https://i.pinimg.com/736x/93/cb/fc/93cbfcc1f648da16ebbd1b2a343d08d0.jpg" alt="car1">
+      <h4>Porsche 911 Carrera</h4>
+      <p>Siluet ikonik dengan aura kemewahan yang tak lekang oleh waktu.</p>
+    </article>
+    <article class="card">
+      <img src="https://i.pinimg.com/1200x/de/3a/83/de3a831fd8d9156bc7e5009f38032706.jpg" alt="car2">
+      <h4>Nissan GT-R Skyline</h4>
+      <p>Pesona legenda Jepang yang menyatukan kekuatan dan estetika.</p>
+    </article>
+    <article class="card">
+      <img src="https://i.pinimg.com/736x/67/f7/34/67f7345e1561379063d69bf2229823ef.jpg" alt="car3">
+      <h4>Porsche Exclusive Design</h4>
+      <p>Sentuhan seni modern pada mobil klasik berperforma tinggi.</p>
+    </article>
+    <article class="card">
+      <img src="https://i.pinimg.com/736x/b3/6e/1d/b36e1d91b3cc246c0cf7068effce5919.jpg" alt="car4">
+      <h4>McLaren P1 Hypercar</h4>
+      <p>Perpaduan teknologi masa depan dengan desain yang memikat.</p>
+    </article>
+  </section>
 
-  <div class="cta">
-    <p>Create Your Vision!</p>
-  </div>
+  <!-- Big CTA -->
+  <section class="big-cta">
+    <div class="content" style="max-width:1200px;margin:0 auto;">
+      <div>
+        <h2>EXPERIENCE LUXURY CARS</h2>
+        <p style="max-width:420px;color:rgba(255,255,255,0.8);margin-top:12px;">
+          Nikmati koleksi foto mobil super eksklusif dengan desain memikat dan performa yang tiada tanding.
+        </p>
+      </div>
+      <div class="video-previews">
+        <img src="https://i.pinimg.com/736x/a8/2e/0b/a82e0b3eff3fb405fa52ece3c81dee8b.jpg" alt="v1">
+        <img src="https://i.pinimg.com/736x/68/b7/90/68b790b98a79236169a48203bbb5973f.jpg" alt="v2">
+      </div>
+    </div>
+  </section>
 
+  <footer style="background: #111; color: #fff; text-align: center; padding: 20px; margin-top: 40px;">
+  <p>© 2025 Dibuat oleh Developer Lufika Ayu Fatimah</p>
+</footer>
+
+
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
