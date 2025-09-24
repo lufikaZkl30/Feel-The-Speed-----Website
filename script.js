@@ -13,21 +13,22 @@ const numEl = document.querySelector(".slide-number");
 function showSlide(i) {
   current = (i + slides.length) % slides.length;
 
-  // background
+  // langsung ganti bg tanpa kedip
   hero.style.backgroundImage = `url('${slides[current].bg}')`;
 
   // animasi angka
   gsap.fromTo(numEl, 
-    { y:100, opacity:0, scale:0.8 }, 
-    { y:0, opacity:1, scale:1, duration:0.6, ease:"power3.out" }
+    { y: 50, opacity: 0, scale: 0.8 }, 
+    { y: 0, opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }
   );
-  gsap.to(numEl, { y:-100, opacity:0, scale:0.8, delay:2.1, duration:0.6, ease:"power3.in" });
+  gsap.to(numEl, { y: -50, opacity: 0, scale: 0.8, delay: 2, duration: 0.6, ease: "power3.in" });
 
-  numEl.textContent = String(current+1).padStart(2,"0");
+  // update teks angka
+  numEl.textContent = String(current + 1).padStart(2, "0");
 }
 
 // auto play
-setInterval(() => { showSlide(current+1); }, 3500);
+setInterval(() => { showSlide(current + 1); }, 3500);
 
 // start
 showSlide(0);

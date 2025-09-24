@@ -1,190 +1,63 @@
-/* Font & Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  background-color: #0f0f0f;
-  line-height: 1.6;
-}
-
-/* === NAVBAR STYLING === */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(10, 10, 10, 0.7); /* transparan elegan */
-  backdrop-filter: blur(6px);
-  z-index: 1000;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo .dot {
-  width: 10px;
-  height: 10px;
-  background: #ff4d2d; /* aksen warna oranye/merah */
-  border-radius: 50%;
-}
-
-.logo h1 {
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #cfcfcf;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  transition: color 0.3s, border-bottom 0.3s;
-  padding-bottom: 4px;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: white;
-  border-bottom: 2px solid #ff4d2d; /* garis hover elegan */
-}
-
-
-/* Hover garis bawah */
-.nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  background: crimson;
-  transition: 0.3s ease;
-}
-
-.nav ul li a:hover::after,
-.nav ul li a.active::after {
-  width: 100%;
-}
-
-/* Hero */
 .hero {
-  position: relative;
-  height: 70vh;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  color: #fff;
+  align-items: flex-start;
+  padding: 0 5%;
   background-size: cover;
   background-position: center;
+  position: relative;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
-.cars-hero {
-  background-image: url("https://i.pinimg.com/1200x/10/16/df/1016dfeb84bbdb3431d7a9c72c4ac24f.jpg");
-}
-
-.hero .overlay {
+.hero::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.55);
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
 }
 
 .hero .content {
   position: relative;
   z-index: 2;
+  max-width: 650px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-family: 'Oswald', sans-serif;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f94d00; /* aksen oranye sporty */
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #fff; /* putih buat kontras */
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
-}
-
-/* Showroom */
-.showroom {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  padding: 4rem 10%;
-  background: #111;
-}
-
-.car-card {
-  background: #1b1b1b;
-  padding: 1.5rem;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.car-card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.car-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.8);
-}
-
-.car-card:hover img {
-  transform: scale(1.05);
-}
-
-.car-card h3 {
-  font-family: 'Oswald', sans-serif;
-  margin-bottom: 0.5rem;
-  color: crimson;
-}
-
-.car-card p {
-  font-size: 0.95rem;
   color: #ddd;
+  margin-top: 10px;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #000;
-  color: #aaa;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  border-top: 1px solid #222;
-}
-
-footer .footer-name {
-  color: crimson;
+.hero .btn {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: #f94d00;
+  color: #fff;
   font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #ff5e1a;
+  transform: translateY(-2px);
 }
