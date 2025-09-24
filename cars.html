@@ -6,25 +6,22 @@
   <title>Cars - Drive The Future</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Icon -->
+   <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/bd/4c/33/bd4c3306b712d2450b25678cf34c69d1.jpg"/>
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/page-cars/cars.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">
-      <span class="dot"></span>
-      <h1>DRIVE THE FUTURE</h1>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">HOME</a></li>
-      <li><a href="cars.html">Cars</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Navbar Include -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
 
 
   <!-- Hero untuk Cars -->
@@ -55,14 +52,24 @@
     </div>
     <div class="car-card">
       <img src="https://i.pinimg.com/736x/6b/17/71/6b1771c89b81fad7b4b5f8f45cf3111f.jpg" alt="Lamborghini Aventador">
-      <h3>Lamborghini Aventador</h3>
-      <p>Ikon supercar dengan desain agresif dan tenaga murni V12.</p>
+      <h3>McLaren Senna</h3>
+      <p>Dinamai dari legenda Ayrton Senna, mobil ini diciptakan untuk performa ekstrem di lintasan dengan aerodinamika agresif.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://i.pinimg.com/736x/6e/08/e3/6e08e3916634dd722f5d1bc5ef5beafd.jpg" alt="Lamborghini Aventador">
+      <h3>Koenigsegg Jesko</h3>
+      <p>Hypercar Swedia dengan teknologi aerodinamis canggih dan tenaga 1600 hp.</p>
+    </div>
+    <div class="car-card">
+      <img src="https://i.pinimg.com/736x/c5/3c/dc/c53cdc7d9c9f4415556463f9119aea37.jpg" alt="Lamborghini Aventador">
+      <h3>Porsche 911 GT3</h3>
+      <p>Mobil balap jalan raya dengan DNA motorsport, dibuat untuk performa di lintasan.</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Drive The Future | Powered by <span class="footer-name">VelocityVision</span></p>
+    <p>© 2025 Drive The Future | Powered by <span class="footer-name">lufikaZkl30</span></p>
   </footer>
 </body>
 </html>

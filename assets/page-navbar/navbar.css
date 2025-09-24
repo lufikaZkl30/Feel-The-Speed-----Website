@@ -1,0 +1,60 @@
+/* Navigation */
+.nav {
+  position: fixed;
+  left: 0; right: 0; top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 48px;
+  background: linear-gradient(rgba(10,10,10,0.25), rgba(10,10,10,0.06));
+  backdrop-filter: blur(4px);
+}
+.nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+.nav .brand .dot {
+  width: 10px; height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+/* Hover */
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: #c00000;
+  transition: all 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+}

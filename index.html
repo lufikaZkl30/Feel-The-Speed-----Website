@@ -18,22 +18,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="nav">
-    <div class="brand">
-      <div class="dot"></div> 
-      <div>DRIVE THE FUTURE</div>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="cars.html">Cars</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navbar Include -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -91,9 +84,10 @@
     </div>
   </section>
 
-  <footer style="background: #111; color: #fff; text-align: center; padding: 20px; margin-top: 40px;">
-  <p>© 2025 Dibuat oleh Developer Lufika Ayu Fatimah</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Drive The Future | Powered by <span class="footer-name">lufikaZkl30</span></p>
+  </footer>
 
 
   <!-- JS -->

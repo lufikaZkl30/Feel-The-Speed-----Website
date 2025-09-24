@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Drive The Future</title>
+  <link rel="stylesheet" href="assets/page-profile/profile.css">
+</head>
+<body>
+
+ <!-- Navbar Include -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Profile Section -->
+  <section class="profile">
+
+    
+    <div class="profile-card">
+      <img src="https://i.pinimg.com/564x/c9/23/b4/c923b4732b9822f90c61c82e8d90dbb3.jpg" alt="My Photo" class="profile-img">
+      <h1>Hai, aku [Namamu]</h1>
+      <p class="tagline">Mahasiswa | Game Developer Enthusiast | Web Designer</p>
+      <p class="desc">
+        Aku sedang belajar membuat website elegan dengan tema otomotif modern 🚗✨. 
+        Selain coding, aku juga suka desain, musik, dan eksplorasi teknologi baru.  
+        Web ini adalah project pribadi yang aku kembangkan sambil belajar.
+      </p>
+      <div class="social-links">
+        <a href="#">🌐 Website</a>
+        <a href="#">📷 Instagram</a>
+        <a href="#">💼 LinkedIn</a>
+        <a href="#">🐙 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
