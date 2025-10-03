@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Porsche</title>
+  <link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+<body>
+
+ <!-- Navbar Include -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h1>Gallery</h1>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/85/76/a0/8576a052c368f4aff812a91cba7798e5.jpg" alt="Porsche 911">
+        <div class="overlay">Porsche 911 Carrera</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/50/f0/bf/50f0bf30e146bb58a7f3f27ee3f3ebc4.jpg" alt="Porsche 911">
+        <div class="overlay">Porsche Turbo S</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/4e/f0/b0/4ef0b04d453807ece2f7985a54694380.jpg" alt="Porsche 911">
+        <div class="overlay">Porsche GT3</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.pinimg.com/736x/d0/ca/4e/d0ca4e67f81d5d29d7dcd146dae5efbb.jpg" alt="Porsche 911">
+        <div class="overlay">Porsche Classic</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+   <!-- Footer -->
+  <footer>
+    <p>© 2025 Drive The Future | Powered by <span class="footer-name">lufikaZkl30</span></p>
+  </footer>
+
+</body>
+</html>
